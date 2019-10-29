@@ -7,13 +7,27 @@
 //
 
 #import "JAppDelegate.h"
+#import "flutterRootVC.h"
 
 @implementation JAppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
+    FlutterPluginAppLifeCycleDelegate *_lifeCycleDelegate;
+}
+- (instancetype)init{
+    if (self = [super init]) {
+        _lifeCycleDelegate = [[FlutterPluginAppLifeCycleDelegate alloc]init];
+    }
+    return self;
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    flutterRootVC *vc = [[flutterRootVC alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    return [_lifeCycleDelegate application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

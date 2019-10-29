@@ -8,8 +8,11 @@
 
 @import UIKit;
 
-@interface JAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+#import <Flutter/Flutter.h>
+
+@interface JAppDelegate : FlutterAppDelegate <UIApplicationDelegate,FlutterAppLifeCycleProvider>
+
+@property (nonatomic,strong) FlutterEngine *flutterEngine;
 
 @end

@@ -1,0 +1,27 @@
+PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - jefferyFlutterPod (0.1.0)
+
+DEPENDENCIES:
+  - Flutter (from `../jeffery_flutter_module/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../jeffery_flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - jefferyFlutterPod (from `../`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../jeffery_flutter_module/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../jeffery_flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+  jefferyFlutterPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  FlutterPluginRegistrant: 8855ca2b426d228cb41aa6c26c0c83b8c49e3593
+  jefferyFlutterPod: dc61abc6753ecd191ca7d6dec700fd9908ed6957
+
+PODFILE CHECKSUM: 726cc972f407f731a504327d23dcc8ec871cd488
+
+COCOAPODS: 1.8.3

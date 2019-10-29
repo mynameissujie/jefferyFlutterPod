@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		EF421CB5BB0E350EC9DCB841 /* Pods_jefferyFlutterPod_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33CC9A1FE71D22DA85FEFE60 /* Pods_jefferyFlutterPod_Example.framework */; };
+		F322081D2368341F001EC3E9 /* MyFlutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F322081C2368341F001EC3E9 /* MyFlutterViewController.m */; };
+		F322082023683434001EC3E9 /* flutterRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F322081F23683434001EC3E9 /* flutterRootVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +62,16 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6AA9FA726000F88711FE4505 /* Pods-jefferyFlutterPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jefferyFlutterPod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-jefferyFlutterPod_Tests/Pods-jefferyFlutterPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7767617E215FE82E2ECEEB3E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7767617E215FE82E2ECEEB3E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88F4A286E5CBC95A7CFCDE19 /* Pods_jefferyFlutterPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jefferyFlutterPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83C43DD95C6DCDD822EBE76 /* Pods-jefferyFlutterPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jefferyFlutterPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-jefferyFlutterPod_Tests/Pods-jefferyFlutterPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C9D70A27139688DBE2603AFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E719C4A32D45464B2AB29D42 /* jefferyFlutterPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = jefferyFlutterPod.podspec; path = ../jefferyFlutterPod.podspec; sourceTree = "<group>"; };
+		C9D70A27139688DBE2603AFC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E719C4A32D45464B2AB29D42 /* jefferyFlutterPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = jefferyFlutterPod.podspec; path = ../jefferyFlutterPod.podspec; sourceTree = "<group>"; };
+		F322081B2368341F001EC3E9 /* MyFlutterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlutterViewController.h; sourceTree = "<group>"; };
+		F322081C2368341F001EC3E9 /* MyFlutterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlutterViewController.m; sourceTree = "<group>"; };
+		F322081E23683434001EC3E9 /* flutterRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flutterRootVC.h; sourceTree = "<group>"; };
+		F322081F23683434001EC3E9 /* flutterRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flutterRootVC.m; sourceTree = "<group>"; };
 		F7E2F0EAC4BE5C1CC1BF14CD /* Pods-jefferyFlutterPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jefferyFlutterPod_Example.release.xcconfig"; path = "Target Support Files/Pods-jefferyFlutterPod_Example/Pods-jefferyFlutterPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +138,10 @@
 		6003F593195388D20070C39A /* Example for jefferyFlutterPod */ = {
 			isa = PBXGroup;
 			children = (
+				F322081E23683434001EC3E9 /* flutterRootVC.h */,
+				F322081F23683434001EC3E9 /* flutterRootVC.m */,
+				F322081B2368341F001EC3E9 /* MyFlutterViewController.h */,
+				F322081C2368341F001EC3E9 /* MyFlutterViewController.m */,
 				6003F59C195388D20070C39A /* JAppDelegate.h */,
 				6003F59D195388D20070C39A /* JAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +203,6 @@
 				6AA9FA726000F88711FE4505 /* Pods-jefferyFlutterPod_Tests.debug.xcconfig */,
 				A83C43DD95C6DCDD822EBE76 /* Pods-jefferyFlutterPod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +218,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				15EDAFA1774BA767FE68F87A /* [CP] Embed Pods Frameworks */,
+				F322081723683383001EC3E9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,6 +268,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +313,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-jefferyFlutterPod_Example/Pods-jefferyFlutterPod_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/jefferyFlutterPod/jefferyFlutterPod.framework",
+				"${PODS_ROOT}/../../jeffery_flutter_module/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jefferyFlutterPod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +370,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F322081723683383001EC3E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -366,7 +396,9 @@
 			files = (
 				6003F59E195388D20070C39A /* JAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JViewController.m in Sources */,
+				F322082023683434001EC3E9 /* flutterRootVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F322081D2368341F001EC3E9 /* MyFlutterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +526,7 @@
 			baseConfigurationReference = 42122463A05CE43A83097208 /* Pods-jefferyFlutterPod_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jefferyFlutterPod/jefferyFlutterPod-Prefix.pch";
 				INFOPLIST_FILE = "jefferyFlutterPod/jefferyFlutterPod-Info.plist";
@@ -510,6 +543,7 @@
 			baseConfigurationReference = F7E2F0EAC4BE5C1CC1BF14CD /* Pods-jefferyFlutterPod_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jefferyFlutterPod/jefferyFlutterPod-Prefix.pch";
 				INFOPLIST_FILE = "jefferyFlutterPod/jefferyFlutterPod-Info.plist";
