@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'jefferyFlutterPod_Example' do
+  pod 'jefferyFlutterPod', :path => '../'
+
+  target 'jefferyFlutterPod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
