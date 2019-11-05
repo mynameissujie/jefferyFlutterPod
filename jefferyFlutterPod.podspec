@@ -8,18 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'jefferyFlutterPod'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A test for flutter_pod.'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/mynameissujie/flutterpodguy.git'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/mynameissujie/jefferyFlutterPod.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jeffery' => '379675320@qq.com' }
-  s.source           = { :git => 'https://github.com/mynameissujie/flutterpodguy.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mynameissujie/jefferyFlutterPod.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.source_files = 'jefferyFlutterPod/Classes/**/*'

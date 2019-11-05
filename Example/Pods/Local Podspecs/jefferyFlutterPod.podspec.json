@@ -1,22 +1,24 @@
 {
   "name": "jefferyFlutterPod",
-  "version": "0.1.0",
-  "summary": "A short description of jefferyFlutterPod.",
+  "version": "0.1.1",
+  "summary": "A test for flutter_pod.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mynameissujie/jefferyFlutterPod",
+  "homepage": "https://github.com/mynameissujie/flutterpodguy.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "mynameissujie": "379675320@qq.com"
+    "jeffery": "379675320@qq.com"
   },
   "source": {
-    "git": "https://github.com/mynameissujie/jefferyFlutterPod.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/mynameissujie/flutterpodguy.git",
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "jefferyFlutterPod/Classes/**/*"
+  "source_files": "jefferyFlutterPod/Classes/**/*",
+  "public_header_files": "jefferyFlutterPod/Classes/**/*.h",
+  "vendored_frameworks": "jefferyFlutterPod/Framework/*.framework"
 }
